@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="surveystyle.css">
+  </head>
+
+<body>
+  <h1 id="title">
+    Sirvini Survey Form
+  </h1>
+  <P id="description">Sirvini survey forms: to help us improve our services to you</P>
+  <Form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="enter your name"
+          required></label>
+      <label for="email" id="email-label">Enter your email: <input type="email" id="email"
+          placeholder="enter your email" required></label>
+      <label for="number" id="number-label"> Your Phone Number: <input type="tel" id="number" pattern="[0789]{3}[1346]{1}[0-9]{7}"  placeholder="number" required></label>
+
+    </fieldset>
+
+    <fieldset>
+      <label> What is your favorite feature of Sirvini
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="same-day-delivery">Same day delivery</option>
+          <option value="24/7-customer-service">24/7 customer service</option>
+          <option value="installmental-payment-option">installmental payment option</option>
+        </select>
+      </label>
+      <label>Would you recommend Sirvini to a friend </label>
+      <label for=""><input type="radio" name="recommend" />Definitely</label>
+      <label for=""><input type="radio" name="recommend" />Maybe</label>
+      <label for=""><input type="radio" name="recommend" />Not sure</label>
+
+    </fieldset>
+    <fieldset>
+      <label>What Would you like to see improved? (check all that applies) </label>
+      <label for="website">
+        <input type="checkbox" value="website"/>website
+      </label>
+      <label for="24/7-customer-service">
+        <input type="checkbox"  value="24/7-customer-service" />customer service relationship
+      </label>
+      <label for="delivery-service">
+        <input type="checkbox" value="delivery-service" />delivery service
+      </label>
+      <label for="quality-assurance">
+        <input type="checkbox" value="quality-assurance" />quality-assurance
+      </label>
+      <label>Additional comment
+        <textarea name="comment" placeholder="any additional comment" cols="30" rows="3"></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="submit">
+
+  </Form>
+
+</body>
+
+</html>
